@@ -52,4 +52,4 @@ RUN zypper -n --gpg-auto-import-keys install virtualbox
 #    virtualbox \
 #   && rm -rf /var/lib/apt/lists/*
 
-ENTRYPOINT  [ "/usr/bin/virtualbox" ]
+ENTRYPOINT  [ "/usr/bin/VirtualBox" ]
