@@ -38,7 +38,7 @@ MAINTAINER Evgeny Shmarnev "shmarnev@gmail.com"
 ENV REFRESHED_AT 2015_07_08
 
 RUN zypper -n --gpg-auto-import-keys ref
-RUN zypper -n --gpg-auto-import-keys install virtualbox
+RUN zypper -n --gpg-auto-import-keys install virtualbox virtualbox-qt
 
 #RUN zypper up && zypper in -y \
 #    ca-certificates \
