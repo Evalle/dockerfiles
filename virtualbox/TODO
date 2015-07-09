@@ -1,0 +1,25 @@
+Almost done. I need to compile kernel module for VirtualBox:
+
+# copy the files you need for the module from the container that
+# is currently running to your host
+#
+# first the script:
+#   docker cp virtualbox:/etc/init.d/vboxdrv .
+#
+# then the src:
+#   docker cp virtualbox:/usr/src/vboxhost-4.3.28 /usr/src/
+#
+# then the share
+#   docker cp virtualbox:/usr/share/virtualbox /usr/share
+#
+# then run the script:
+#   ./vboxdrv setup
+#
+# it will recompile the module, you can then see it in lsmod
+#
+# then you can remove all the shit you copied
+#   rm -rf /usr/src/vboxhost*
+#   rm -rf /usr/share/virtualbox
+#   rm vboxdrv
+# done
+
