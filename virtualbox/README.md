@@ -12,7 +12,7 @@ To build:
 $ sudo docker build -t <username>/virtualbox .
 ```
 
-To run: 
+Preparation steps: 
 
 First of all, you need to have a virtualbox kernel module in your system. There are two ways to install it:
 
@@ -22,7 +22,7 @@ First of all, you need to have a virtualbox kernel module in your system. There 
 $ sudo zypper in virtualbox-host-kmp-desktop 
 ```
 
-and then run 'inmod' to install vboxdrv.ko: 
+and then run 'insmod' to install vboxdrv.ko: 
 
 ```
 sudo insmod /lib/modules/$(uname -r)/updates/vboxdrv.ko
@@ -30,12 +30,13 @@ sudo insmod /lib/modules/$(uname -r)/updates/vboxdrv.ko
 
 2) 
 
-Also if you run docker as regular user (e.g. $ sudo docker ...) you need to allow local:root to access local X server:
+Also, if you run docker as a regular user (e.g. $ sudo docker ...) you need to allow local:root to access local X server:
 
 ```
 xhost local:root
 ```
 
+To run:
 
 
 To test:
