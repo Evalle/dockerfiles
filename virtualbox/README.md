@@ -22,7 +22,7 @@ If you're using openSUSE like me, you can install *'virtualbox-host-kmp-desktop'
 $ sudo zypper in virtualbox-host-kmp-desktop 
 ```
 
-and then just run 'insmod' to install vboxdrv.ko: 
+and then just run *'insmod'* to install *vboxdrv.ko*: 
 
 ```
 $ sudo insmod /lib/modules/$(uname -r)/updates/vboxdrv.ko
