@@ -25,7 +25,7 @@ $ sudo zypper in virtualbox-host-kmp-desktop
 and then run 'insmod' to install vboxdrv.ko: 
 
 ```
-sudo insmod /lib/modules/$(uname -r)/updates/vboxdrv.ko
+$ sudo insmod /lib/modules/$(uname -r)/updates/vboxdrv.ko
 ```
 
 2) 
@@ -33,7 +33,7 @@ sudo insmod /lib/modules/$(uname -r)/updates/vboxdrv.ko
 Also, if you run docker as a regular user (e.g. *$ sudo docker ...*) you need to allow *local:root* to access local X server:
 
 ```
-xhost local:root
+$ xhost local:root
 ```
 
 **To run:**
