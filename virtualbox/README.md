@@ -42,6 +42,6 @@ $ sudo docker run -d -v /tmp/.X11-unix/:/tmp/.X11-unix/ -e DISPLAY=unix$DISPLAY 
 
 **To test:**
 
-You can just mount iso image to your container (via volumes) and create virtual machine (with windows, linux, you name it) inside virtualbox insid your container :)
+You can just mount iso image of some OS (windows, linux, you name it) to your container (via volumes) and create virtual machine inside virtualbox inside your container :)
 
 Have a lot of fun!
