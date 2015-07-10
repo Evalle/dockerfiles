@@ -1,4 +1,5 @@
 # Run virtualbox in the container
+# Have a lot of fun ! 
 
 FROM opensuse:tumbleweed
 MAINTAINER Evgeny Shmarnev "shmarnev@gmail.com"
