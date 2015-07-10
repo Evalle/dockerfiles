@@ -16,7 +16,7 @@ $ sudo docker build -t <username>/virtualbox .
 
 First of all, you need to have a virtualbox kernel module installed on your system. 
 
-1) If you're using openSUSE like me, you can install *'virtualbox-host-kmp-desktop'* package via:
+If you're using openSUSE like me, you can install *'virtualbox-host-kmp-desktop'* package via:
 
 ```
 $ sudo zypper in virtualbox-host-kmp-desktop 
