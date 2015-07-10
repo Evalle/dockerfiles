@@ -1,7 +1,7 @@
 dockerfiles-opensuse-virtualbox
 ===============================
 
-OpenSUSE Dockerfile for **Virtualbox** - a hypervisor for x86 computers from Oracle Corporation. 
+openSUSE Dockerfile for **Virtualbox** - a hypervisor for x86 computers from Oracle Corporation. 
 
 This Dockerfile was inspired by amazing *Jesse Frazelle's* talk on last DockerCon (https://www.youtube.com/watch?v=1qlLUf7KtAw)  
 
@@ -9,7 +9,7 @@ This Dockerfile was inspired by amazing *Jesse Frazelle's* talk on last DockerCo
 **To build Docker image:**
 
 ```
-$ sudo docker build -t <username>/virtualbox .
+$ sudo docker build -t <username>/<name_of_your_image> .
 ```
 
 **Preparation steps:** 
@@ -36,12 +36,12 @@ $ xhost local:root
 
 **To run:**
 
+```
+$ sudo docker run -d -v /tmp/.X11-unix/:/tmp/.X11-unix/ -e DISPLAY=unix$DISPLAY --privileged --name <container_name> <your_name/<name_of_your_image>
+```
 
 **To test:**
 
-```
-```
+You can just mount iso image to your container (via volumes) and create virtual machine (with windows, linux, you name it) inside virtualbox insid your container :)
 
-```
-```
-
+Have a lot of fun!
