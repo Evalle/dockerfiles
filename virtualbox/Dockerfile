@@ -1,6 +1,6 @@
 # Run virtualbox in the container
 
-FROM opensuse:13.2
+FROM opensuse:tumbleweed
 MAINTAINER Evgeny Shmarnev "shmarnev@gmail.com"
 ENV REFRESHED_AT 2015_07_10
 
