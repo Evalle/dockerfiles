@@ -6,13 +6,13 @@ OpenSUSE Dockerfile for **Virtualbox** - a hypervisor for x86 computers from Ora
 This Dockerfile inspired by wonderful *Jesse Frazelle's* talk on DockerCon'15 (https://www.youtube.com/watch?v=1qlLUf7KtAw)  
 
 
-To build:
+**To build:**
 
 ```
 $ sudo docker build -t <username>/virtualbox .
 ```
 
-Preparation steps: 
+**Preparation steps:** 
 
 First of all, you need to have a virtualbox kernel module in your system. There are two ways to install it:
 
@@ -36,10 +36,10 @@ Also, if you run docker as a regular user (e.g. **$ sudo docker ...**) you need 
 xhost local:root
 ```
 
-To run:
+**To run:**
 
 
-To test:
+**To test:**
 
 ```
 ```
