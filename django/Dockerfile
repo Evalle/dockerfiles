@@ -2,7 +2,7 @@ FROM opensuse:latest
 
 MAINTAINER Evgeny Shmarnev "eshmarnev@suse.com"
 
-ENV REFRESHED_AT 2015-17-04
+ENV REFRESHED_AT 2015-09-11
 
 RUN zypper -n --gpg-auto-import-keys refresh
 RUN zypper -n --gpg-auto-import-keys install python-pip python-django git sqlite3
