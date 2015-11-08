@@ -1,10 +1,9 @@
 FROM opensuse:latest
 
 MAINTAINER Evgeny Shmarnev "eshmarnev@suse.com"
-ENV REFRESHED_AT 2015-15-04
+ENV REFRESHED_AT 2015-08-11
 
 RUN zypper -n --gpg-auto-import-keys refresh
-RUN zypper -n --gpg-auto-import-keys update
 RUN zypper -n --gpg-auto-import-keys install apache2
 
 # adding include.conf file. Without it apache doesn't start . Probably a bug :/ 
