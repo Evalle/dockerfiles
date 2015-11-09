@@ -1,6 +1,7 @@
-FROM opensuse:13.2
+FROM opensuse:latest
+
 MAINTAINER Evgeny Shmarnev "eshmarnev@suse.com"
-ENV REFRESHED_AT 2015-16-04
+ENV REFRESHED_AT 2015-09-11
 
 RUN zypper -n --gpg-auto-import-keys ref
 RUN zypper -n --gpg-auto-import-keys install memcached 
