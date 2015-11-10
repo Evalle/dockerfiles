@@ -1,8 +1,7 @@
-FROM opensuse:13.2
+FROM opensuse:latest
 
 MAINTAINER Evgeny Shmarnev "eshmarnev@suse.com"
-ENV REFRESHED_AT 2015-15-04
+ENV REFRESHED_AT 2015-10-11
 
 RUN zypper -n --gpg-auto-import-keys refresh
-RUN zypper -n --gpg-auto-import-keys update
 RUN zypper -n --gpg-auto-import-keys install ruby-devel git
