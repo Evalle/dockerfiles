@@ -1,13 +1,13 @@
-FROM opensuse:latest
+FROM opensuse:42.1
 
 MAINTAINER Evgeny Shmarnev "eshmarnev@suse.com"
-ENV REFRESHED_AT 2015-08-11
+ENV REFRESHED_AT 2015-08-1
 
 RUN zypper -n --gpg-auto-import-keys refresh
 RUN zypper -n --gpg-auto-import-keys install apache2
 
 # adding include.conf file. Without it apache doesn't start . Probably a bug :/ 
-RUN  touch /etc/apache2/sysconfig.d/include.conf
+#RUN  touch /etc/apache2/sysconfig.d/include.conf
 
 RUN touch /srv/www/htdocs/index.html
 RUN echo "Apache works!" > /srv/www/htdocs/index.html
