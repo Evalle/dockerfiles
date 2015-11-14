@@ -1,4 +1,4 @@
-FROM opensuse:latest
+FROM opensuse:42.1
 
 MAINTAINER Evgeny Shmarnev "eshmarnev@suse.com"
 ENV REFRESHED_AT 2015-09-11
