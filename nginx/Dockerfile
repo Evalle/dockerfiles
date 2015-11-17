@@ -1,6 +1,6 @@
-FROM opensuse:13.2
+FROM opensuse:42.1
 MAINTAINER Evgeny Shmarnev "eshmarnev@suse.com"
-ENV REFRESHED_AT 2015-09-11
+ENV REFRESHED_AT 2015-17-11
 
 RUN zypper ar http://download.opensuse.org/repositories/server:/http/openSUSE_13.2/server:http.repo
 RUN zypper -n --gpg-auto-import-keys refresh
