@@ -1,6 +1,6 @@
-FROM opensuse:latest
+FROM opensuse:42.1
 MAINTAINER Evgeny Shmarnev "eshmarnev@suse.com"
-ENV REFRESHED_AT 2015-09-11
+ENV REFRESHED_AT 2015-18-11
 
 RUN zypper ar http://download.opensuse.org/repositories/isv:/ownCloud:/community/openSUSE_13.2/isv:ownCloud:community.repo
 RUN zypper -n --gpg-auto-import-keys ref
